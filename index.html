@@ -9,38 +9,47 @@
 
 
 
-<button type="button" onclick = "takeStudy()">
+<button type="button" onclick = "chooseCondition()">
 Yes, I would like to participate in the study!</button>
 
 
+<!--<button type="button" onclick = "location.href='control/CAQ1.html'">
+Yes, I would like to participate in the study!</button>
+-->
 <script>
-function takeStudy() {
-  var x = Math.floor(Math.randomInt() * 6;  //returns integer in range: 0-6 exculsive
+function chooseCondition() {
+  var x = (x+1)%6;
 
-  if(x == 0){
-
-  }
+  document.write(x);
   if(x == 1){
+    window.location.href='control/CAQ1.html'
+  }
+  else if(x == 2){
+    window.location.href='control/CAQ1.html'
 
   }
-  if(x == 2){
+  else if(x == 3){
+    window.location.href='control/CAQ1.html'
 
   }
-  if(x == 3){
+  else if(x == 4){
+    window.location.href='control/CAQ1.html'
 
   }
-  if(x == 4){
-
+  else if(x == 5){
+    window.location.href='control/CAQ1.html'
   }
-  if(x == 5){
-    
+  else if(x == 6){
+    window.location.href='control/CAQ1.html'
+  } else{
+    window.location.href='control/demographics.html'
+
   }
 
 
 }
 
-
-
+</script>
 
 </body>
 </html>
