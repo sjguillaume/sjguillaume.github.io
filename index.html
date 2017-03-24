@@ -20,40 +20,40 @@ The collected results will be stored securely by the Allegheny College Computer 
 Yes, I would like to participate in the study!</button>
 -->
 
-<button type="button" onclick = "window.location.href='Control/demographics.html'">
+<button type="button" onclick = "choosePage();" >
 Yes, I would like to participate in the study!</button>
-<!--
+
+
+
+
+
+
 <script>
-function chooseCondition() {
-  var x = (x+1)%6;
 
-  document.write(x);
-  if(x == 1){
-    window.location.href='Control/demographics.html'
+function choosePage(){
+  var x = Math.floor(Math.random() * 5);
+  console.log(x);
+
+  if(x == 0){
+      console.log("in 0");
+      window.location.href = 'Control/demographics.html';
+  }  if(x == 1){
+      console.log("in 1");
+      indow.location.href = 'Check/demographics.html';
+  }  if(x == 2){
+    console.log("in 2");
+      window.location.href = 'NoScore/demographics.html';
+  }  if(x == 3){
+    console.log("in 3");
+      window.location.href = 'Random/demographics.html';
+  }  if(x == 4){
+    console.log("in 4");
+      window.location.href = 'Reverse/demographics.html';
   }
-  else if(x == 2){
-    window.location.href='Check/demographics.html'
-
-  }
-  else if(x == 3){
-    window.location.href='NoScore/demographics.html'
-
-  }
-  else if(x == 4){
-    window.location.href='Random/demographics.html'
-
-  }
-  else if(x == 5){
-    window.location.href='Reverse/demographics.html'
-  } else{
-    window.location.href='Control/demographics.html'
-
-  }
-
-
 }
 
+
 </script>
--->
+
 </body>
 </html>
